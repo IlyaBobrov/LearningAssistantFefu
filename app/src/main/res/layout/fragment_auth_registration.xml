@@ -149,8 +149,31 @@
 
                 </RadioGroup>
 
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Выберете ваш институт"
+                    android:layout_marginBottom="5dp"
+                    />
+
+                <Spinner
+                    android:id="@+id/spinnerUniversityAuthReg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_bottom_et"
+                    />
+
+                <EditText
+                    android:id="@+id/etSpecialtyAuthReg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_bottom_et"
+                    android:hint="Введите вашу специальность"
+                    android:inputType="text" />
+
+
                 <CheckBox
-                    android:id="@+id/checkBox"
+                    android:id="@+id/checkBoxAuthReg"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
