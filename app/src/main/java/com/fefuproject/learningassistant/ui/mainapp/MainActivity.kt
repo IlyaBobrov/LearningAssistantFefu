@@ -2,14 +2,11 @@ package com.fefuproject.learningassistant.ui.mainapp
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import androidx.navigation.Navigation
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.fefuproject.learningassistant.R
 import com.fefuproject.learningassistant.databinding.ActivityMainBinding
-import com.google.android.material.bottomnavigation.BottomNavigationView
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -29,7 +26,7 @@ class MainActivity : AppCompatActivity() {
 
         val appBarConfiguration = AppBarConfiguration(
             setOf(
-                R.id.navigation_home, R.id.navigation_dashboard, R.id.navigation_notifications
+                R.id.navigation_home, R.id.navigation_materials, R.id.navigation_quiz, R.id.navigation_profile
             )
         )
 //        setupActionBarWithNavController(navController, appBarConfiguration)

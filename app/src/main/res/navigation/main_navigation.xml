@@ -12,14 +12,21 @@
         tools:layout="@layout/fragment_main_home" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.fefuproject.learningassistant.ui.mainapp.fragments.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_main_dashboard" />
+        android:id="@+id/navigation_materials"
+        android:name="com.fefuproject.learningassistant.ui.mainapp.fragments.materials.MaterialsFragment"
+        android:label="@string/Materials"
+        tools:layout="@layout/fragment_main_materials" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.fefuproject.learningassistant.ui.mainapp.fragments.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_main_notifications" />
+        android:id="@+id/navigation_quiz"
+        android:name="com.fefuproject.learningassistant.ui.mainapp.fragments.quiz.QuizFragment"
+        android:label="@string/Quiz"
+        tools:layout="@layout/fragment_main_quiz" />
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.fefuproject.learningassistant.ui.mainapp.fragments.profile.ProfileFragment"
+        android:label="@string/Profile"
+        tools:layout="@layout/fragment_main_quiz" />
+
 </navigation>
