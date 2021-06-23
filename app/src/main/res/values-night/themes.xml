@@ -21,9 +21,43 @@
         <item name="android:textSize">24sp</item>
         <item name="android:textStyle">bold</item>
     </style>
+
     <style name="h2" parent="@style/AppTheme">
         <item name="android:textColor">@color/white</item>
         <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="h3" parent="@style/AppTheme">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="h3_home" parent="@style/AppTheme">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="p_home" parent="@style/AppTheme">
+        <item name="android:textColor">@color/ghostMiddle</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="itemYellow" parent="@style/AppTheme">
+        <item name="background">@drawable/bg_button_shape</item>
+        <item name="backgroundTint">@color/fuschia_100_night</item>
+    </style>
+
+    <style name="p_material" parent="@style/AppTheme">
+        <item name="android:textColor">@color/ghostMiddleNight</item>
+    </style>
+
+    <style name="p_profile" parent="@style/AppTheme">
+        <item name="android:textColor">@color/ghostMiddle</item>
+        <item name="android:textSize">16sp</item>
         <item name="android:textStyle">normal</item>
     </style>
 

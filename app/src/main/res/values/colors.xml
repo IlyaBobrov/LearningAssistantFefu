@@ -51,9 +51,16 @@
     <color name="grey_20">#636363</color>
     <color name="grey_10">#777777</color>
 
+    <color name="grey_easy">#26777777</color>
+    <color name="grey_easy2">#26494949</color>
+
+
     <color name="ghostMiddle">#DADCE0</color>
+    <color name="ghostMiddleNight">#CDCFD3</color>
     <color name="primaryMiddle">#4096FB</color>
 
     <color name="primary">@color/iris_100</color>
+
+    <color name="colorCustomGreen">#44B8B8</color>
 
 </resources>

@@ -2,15 +2,20 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <item
-        android:id="@+id/tbSerch"
-        android:title="@string/search"
-        android:icon="@drawable/ic_search"
-        app:showAsAction="ifRoom" />
+    <group
+        android:id="@+id/group_toolbar_search">
+
+        <item
+            android:id="@+id/tbSerch"
+            android:title="@string/search"
+            android:icon="@drawable/ic_search"
+            app:showAsAction="ifRoom" />
+
+    </group>
 
     <item
-        android:id="@+id/tbExit"
-        android:title="@string/Exit"
+        android:id="@+id/tbHelp"
+        android:title="@string/Help"
         android:icon="@android:drawable/ic_menu_myplaces"
         app:showAsAction="withText" />
 

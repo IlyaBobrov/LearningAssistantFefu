@@ -12,6 +12,11 @@
         android:title="@string/Materials" />
 
     <item
+        android:id="@+id/navigation_subjects"
+        android:icon="@drawable/ic_subjects"
+        android:title="@string/Subjects" />
+
+    <item
         android:id="@+id/navigation_quiz"
         android:icon="@drawable/ic_quiz"
         android:title="@string/Quiz" />

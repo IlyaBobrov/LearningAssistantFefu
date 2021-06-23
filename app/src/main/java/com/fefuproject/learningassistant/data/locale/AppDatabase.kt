@@ -9,7 +9,7 @@ import com.fefuproject.learningassistant.utils.Constants.DATABASE_NAME
 
 @Database(
     entities = [(User::class)],
-    version = 1,
+    version = 2,
     exportSchema = false
 )
 abstract class AppDatabase : RoomDatabase() {

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.mainapp.fragments.materials.fragment.theory.TheoryFragment">
+
+    <RelativeLayout
+        android:id="@+id/containerTheory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="20dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="10dp">
+
+
+        <RelativeLayout
+            android:id="@+id/containerMainTheory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bg_button_shape"
+            android:backgroundTint="@color/grey_easy"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tvTitleTheory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="20dp"
+                android:theme="@style/h2"
+                tools:text="12345" />
+
+            <TextView
+                android:id="@+id/tvConstTheory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvTitleTheory"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="20dp"
+                android:text="Теоретический материал"
+                android:theme="@style/h3" />
+
+            <TextView
+                android:id="@+id/tvTitleTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvConstTheory"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="20dp"
+                android:theme="@style/h3"
+                tools:text="12345" />
+
+            <TextView
+                android:id="@+id/tvBodyTheorem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvTitleTheme"
+                android:theme="@style/p_material"
+                tools:text="123252" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/container2Theory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/containerMainTheory"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bg_button_shape"
+            android:backgroundTint="@color/grey_easy"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tvConstTheory2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="Вложения"
+                android:theme="@style/h3" />
+
+            <View
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_below="@id/tvConstTheory2"
+                android:background="@drawable/bg_button_shape"
+                android:backgroundTint="@color/grey_easy2"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/container3Theory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/container2Theory"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bg_button_shape"
+            android:backgroundTint="@color/grey_easy"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tvConstTheory3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="Ссылки"
+                android:theme="@style/h3" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvConstTheory3"
+                android:text="Ссылок нет" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/container4Theory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/container3Theory"
+            android:background="@drawable/bg_button_shape"
+            android:backgroundTint="@color/grey_easy"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tvConstTheory4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="20dp"
+                android:text="Задачи"
+                android:theme="@style/h3" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/button_shape"
+                android:text="Перейти"
+                android:textAllCaps="false"/>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</androidx.core.widget.NestedScrollView>

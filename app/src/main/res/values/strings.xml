@@ -22,6 +22,7 @@
     <string name="Main">Главная</string>
     <string name="Materials">Материалы</string>
     <string name="Quiz">Quiz</string>
+    <string name="Subjects">Предметы</string>
     <string name="Profile">Профиль</string>
     <string name="search">поиск</string>
     <string name="Exit">выйти</string>
@@ -116,5 +117,18 @@
         "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
         "when a user tries to pick up one of cards.\n\n"
     </string>
+
     <string name="action_settings">Settings</string>
+    <string name="in_develop">В разработке</string>
+    <string name="Help">Помощь</string>
+
+
+    <string name="stop_text_1">Lorem ipsum dolor sit amet consectetur adipiscing elit parturient neque sodales aliquam, facilisi torquent erat quam semper conubia sem cras tortor. Leo urna tempus fames cras finibus interdum praesent ullamcorper sollicitudin volutpat, efficitur mi iaculis nunc lacus aptent eu enim arcu, metus sit velit placerat dignissim molestie parturient in imperdiet. Conubia feugiat tortor ligula himenaeos ut metus malesuada, consectetur rutrum aliquet fusce justo arcu, lacinia bibendum curabitur tempor tristique lorem. Ad euismod amet torquent porttitor erat venenatis inceptos placerat ullamcorper risus, nibh primis habitasse facilisis maecenas volutpat rhoncus velit id, sollicitudin elit tristique sapien fermentum ligula duis efficitur cras. Consequat mi duis efficitur amet integer congue, cras ridiculus nisi rutrum mattis primis arcu, cursus sollicitudin purus ornare morbi. Enim a tempus porta convallis curae sagittis hendrerit per, posuere aenean hac nascetur euismod venenatis ultrices, elementum diam egestas conubia magnis pulvinar himenaeos. Ultricies ad nisl commodo libero dis turpis duis justo, venenatis sagittis fringilla ligula ac elementum ridiculus neque sodales, magnis in euismod urna tortor nascetur laoreet. Amet dictum enim senectus fames scelerisque habitasse maximus mauris nisl, euismod facilisi viverra arcu leo in aliquam egestas, ante posuere placerat iaculis cras nisi vestibulum tempor. Suspendisse nam etiam dis dolor adipiscing condimentum posuere ex malesuada dapibus mattis ad lacus morbi molestie phasellus odio, platea sit litora viverra fermentum aliquet potenti penatibus mollis ipsum lobortis iaculis efficitur interdum duis. Hendrerit torquent imperdiet semper posuere pellentesque finibus sociosqu vivamus venenatis, tempor maximus cras urna quisque mauris fames. Facilisi taciti dapibus faucibus id eu nunc, ornare parturient arcu etiam metus, elit dignissim conubia maximus turpis. Feugiat duis nascetur a sagittis consectetur enim velit, porta arcu semper dictum pharetra mollis vestibulum, scelerisque odio dis magna sapien sodales. Nulla maecenas lectus est egestas dolor id fusce faucibus viverra nostra, facilisi metus risus phasellus diam consectetur commodo non odio, sed inceptos finibus per donec tempor justo integer dis. Nostra curabitur urna tempor aptent viverra tellus lobortis sollicitudin hac, porta montes luctus felis vitae est rutrum. Ultrices risus conubia aliquam finibus ante nascetur integer, inceptos ad semper vivamus justo id class, porttitor parturient rutrum magna erat lectus. Commodo odio suspendisse facilisi vestibulum turpis parturient elit conubia, non mi placerat lacinia blandit rutrum laoreet, nunc convallis nascetur enim eleifend fames felis. Senectus netus praesent nibh auctor magna aliquet lacus class rhoncus, conubia ipsum sollicitudin potenti mi neque curae nunc parturient sodales, consectetur laoreet sapien taciti facilisis scelerisque malesuada per. Nisl montes lectus morbi vulputate est cursus lobortis feugiat himenaeos, tempor purus massa aptent praesent felis adipiscing quam, inceptos enim dis venenatis malesuada non molestie finibus. Conubia ex turpis class potenti tristique purus rutrum vel convallis nascetur torquent mattis mi, risus tempor montes pharetra donec arcu magna morbi sollicitudin suspendisse eros facilisis. Vivamus tempus phasellus rutrum nisi mi accumsan eleifend etiam integer purus, ornare leo habitant est facilisi himenaeos hac laoreet curae dapibus, felis sagittis rhoncus suspendisse inceptos scelerisque viverra lorem lacus.</string>
+    <string name="stop_text_2">В отчетном периоде предприятие выпустило изделий А в количестве 200 шт., изделий Б — 300 шт. Цена изделия А 1800 руб., изделия Б — 2 580 руб.
+
+Стоимость услуг промышленного характера, оказанных сторонним предприятиям 37 500 руб. Остаток НЭП на начало года 53 000 руб., на конец года 75 000 руб.
+
+Наряду с основной продукцией произведена тара на сумму 12 000 руб., в том числе для отпуска на сторону на сумму 8 000 руб.
+
+Определить: объем товарной, валовой и реализованной продукции.</string>
 </resources>

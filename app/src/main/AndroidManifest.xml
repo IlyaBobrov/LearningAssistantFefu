@@ -13,10 +13,11 @@
         <activity
             android:name=".ui.mainapp.fragments.materials.fragment.TheoryActivity"
             android:label="@string/title_activity_theory"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".ui.mainapp.MainActivity"
-            android:label="@string/title_activity_main"></activity>
+            android:label="@string/title_activity_main"
+            android:windowSoftInputMode="stateVisible|adjustResize"/>
         <activity
             android:name=".ui.splash.SplashActivity"
             android:theme="@style/splashScreenTheme">

@@ -14,15 +14,28 @@ constructor(
 
     fun getUser(id: Int) =
         performGetOperation(
-            databaseQuery = { localDataSource.getUser(id) },
-            networkCall = { remoteDataSource.getUser(id) },
-            saveCallResult = { localDataSource.insert(it) }
+            databaseQuery = { localDataSource.getUser(id) }
+            /*networkCall = { remoteDataSource.getUser(id) },
+            saveCallResult = { localDataSource.insert(it) }*/
+        )
+    fun getUserWithLogin(login: String) =
+        performGetOperation(
+            databaseQuery = { localDataSource.getUserWithLogin(login) }
+            /*networkCall = { remoteDataSource.getUserWithLogin(login) },*/
+            /*saveCallResult = { localDataSource.insert(login) }*/
+        )
+
+    fun getUserWithLoginAndPass(login: String, pass:String) =
+        performGetOperation(
+            databaseQuery = { localDataSource.getUserWithLoginAndPass(login,pass) }
+            /*networkCall = { remoteDataSource.getUserWithLogin(login) },*/
+            /*saveCallResult = { localDataSource.insert(login) }*/
         )
 
     fun getUsers() =
         performGetOperation(
-            databaseQuery = { localDataSource.getAllUsers() },
-            networkCall = { remoteDataSource.getUsers() },
-            saveCallResult = { localDataSource.insertAll(it.results) }
+            databaseQuery = { localDataSource.getAllUsers() }
+            /*networkCall = { remoteDataSource.getUsers() },
+            saveCallResult = { localDataSource.insertAll(it.results) }*/
         )
 }

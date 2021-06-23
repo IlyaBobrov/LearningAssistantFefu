@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.mainapp.fragments.subjects.fragment.testing.TestingFragment">
+
+    <RelativeLayout
+        android:id="@+id/containerTesting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="20dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="10dp">
+
+
+        <RelativeLayout
+            android:id="@+id/containerMainTesting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bg_button_shape"
+            android:backgroundTint="@color/grey_easy"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tvTitleTesting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="20dp"
+                android:theme="@style/h2"
+                tools:text="12345" />
+
+            <TextView
+                android:id="@+id/tvTitleThemeTesting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvTitleTesting"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="20dp"
+                android:theme="@style/h3"
+                tools:text="12345" />
+
+            <TextView
+                android:id="@+id/tvConstTesting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvTitleThemeTesting"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="20dp"
+                android:text="Условия задачи"
+                android:theme="@style/h3" />
+
+
+            <TextView
+                android:id="@+id/tvBodyTheoremTesting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvConstTesting"
+                android:theme="@style/p_material"
+                tools:text="123252" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/container2Testing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/containerMainTesting"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bg_button_shape"
+            android:backgroundTint="@color/grey_easy"
+            android:visibility="gone"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tvConstTesting2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="Вложения"
+                android:theme="@style/h3" />
+
+            <View
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_below="@id/tvConstTesting2"
+                android:background="@drawable/bg_button_shape"
+                android:backgroundTint="@color/grey_easy2" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/container3Testing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/container2Testing"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bg_button_shape"
+            android:backgroundTint="@color/grey_easy"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tvConstTesting3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="Поле ответа"
+                android:theme="@style/h3" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:minHeight="100dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/container4Testing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/container3Testing"
+            android:padding="10dp">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/button_shape"
+                android:text="Отправить"
+                android:textAllCaps="false" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</androidx.core.widget.NestedScrollView>

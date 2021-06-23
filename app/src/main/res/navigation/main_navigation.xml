@@ -15,7 +15,16 @@
         android:id="@+id/navigation_materials"
         android:name="com.fefuproject.learningassistant.ui.mainapp.fragments.materials.MaterialsFragment"
         android:label="@string/Materials"
-        tools:layout="@layout/fragment_main_materials" />
+        tools:layout="@layout/fragment_main_materials">
+
+        <action
+            android:id="@+id/action_homeFragment_to_taskFragment"
+            app:destination="@id/listensFragment"
+            app:popUpTo="@id/listensFragment"
+            app:popUpToInclusive="true"
+            app:popUpToSaveState="true" />
+
+    </fragment>
 
     <fragment
         android:id="@+id/navigation_quiz"
@@ -24,9 +33,62 @@
         tools:layout="@layout/fragment_main_quiz" />
 
     <fragment
+        android:id="@+id/navigation_subjects"
+        android:name="com.fefuproject.learningassistant.ui.mainapp.fragments.subjects.SubjectsFragment"
+        android:label="fragment_main_subjects"
+        tools:layout="@layout/fragment_main_subjects">
+        <action
+            android:id="@+id/action_navigation_subjects_to_testsSubjectsFragment"
+            app:destination="@id/testsSubjectsFragment"
+            app:popUpTo="@id/testsSubjectsFragment"
+            app:popUpToInclusive="true"
+            app:popUpToSaveState="true" />
+    </fragment>
+
+    <fragment
         android:id="@+id/navigation_profile"
         android:name="com.fefuproject.learningassistant.ui.mainapp.fragments.profile.ProfileFragment"
         android:label="@string/Profile"
-        tools:layout="@layout/fragment_main_quiz" />
+        tools:layout="@layout/fragment_main_profile" />
+
+    <fragment
+        android:id="@+id/listensFragment"
+        android:name="com.fefuproject.learningassistant.ui.mainapp.fragments.materials.fragment.ListensFragment"
+        android:label="fragment_main_materials_listens"
+        tools:layout="@layout/fragment_main_materials_listens">
+        <action
+            android:id="@+id/action_listensFragment_to_theoryFragment"
+            app:destination="@id/theoryFragment"
+            app:popUpTo="@id/theoryFragment"
+            app:popUpToInclusive="true"
+            app:popUpToSaveState="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/theoryFragment"
+        android:name="com.fefuproject.learningassistant.ui.mainapp.fragments.materials.fragment.theory.TheoryFragment"
+        android:label="fragment_home_material_theory"
+        tools:layout="@layout/fragment_main_material_theory" />
+
+    <fragment
+        android:id="@+id/testsSubjectsFragment"
+        android:name="com.fefuproject.learningassistant.ui.mainapp.fragments.subjects.fragment.TestsSubjectsFragment"
+        android:label="fragment_main_tests_subjects"
+        tools:layout="@layout/fragment_main_tests_subjects">
+
+        <action
+            android:id="@+id/action_testsSubjectsFragment_to_testingFragment"
+            app:destination="@id/testingFragment"
+            app:popUpTo="@id/testingFragment"
+            app:popUpToInclusive="true"
+            app:popUpToSaveState="true" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/testingFragment"
+        android:name="com.fefuproject.learningassistant.ui.mainapp.fragments.subjects.fragment.testing.TestingFragment"
+        android:label="fragment_main_subjects_testing"
+        tools:layout="@layout/fragment_main_subjects_testing" />
+
 
 </navigation>

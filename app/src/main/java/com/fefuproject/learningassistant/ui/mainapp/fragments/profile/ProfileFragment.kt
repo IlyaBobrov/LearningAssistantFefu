@@ -7,6 +7,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.fefuproject.learningassistant.R
+import com.fefuproject.learningassistant.databinding.FragmentMainMaterialsListensBinding
+import com.fefuproject.learningassistant.databinding.FragmentMainProfileBinding
 
 class ProfileFragment : Fragment() {
 
@@ -16,11 +18,16 @@ class ProfileFragment : Fragment() {
 
     private lateinit var viewModel: ProfileViewModel
 
+    private var _binding: FragmentMainProfileBinding? = null
+    private val binding get() = _binding!!
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        return inflater.inflate(R.layout.fragment_main_profile, container, false)
+    ): View {
+        _binding = FragmentMainProfileBinding.inflate(inflater, container, false)
+        val root: View = binding.root
+        return root
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {

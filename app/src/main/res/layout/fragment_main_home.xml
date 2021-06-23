@@ -1,23 +1,205 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     tools:context=".ui.mainapp.fragments.home.HomeFragment">
 
-    <TextView
-        android:id="@+id/text_home"
+    <RelativeLayout
+        android:id="@+id/containerHome"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:paddingStart="20dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="10dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <RelativeLayout
+            android:id="@+id/containerTitleHome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bg_button_shape"
+            android:backgroundTint="@color/colorCustomGreen"
+            android:paddingStart="20dp"
+            android:paddingTop="20dp"
+            android:paddingEnd="20dp">
+
+            <RelativeLayout
+                android:id="@+id/containerRauHome"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:text="Ваш рейтинг"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:theme="@style/h2" />
+
+                <TextView
+                    android:id="@+id/tvRauHome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/white"
+                    android:theme="@style/h1"
+                    android:layout_marginEnd="20dp"
+                    tools:text="4.8" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/lineTitleHome"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/containerRauHome"
+                android:layout_marginTop="10dp"
+                android:background="@color/white" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lineTitleHome"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:text="Изучайте материалы и проходите тесты чтобы повысить свой рейтинг"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/containerBodyHome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/containerTitleHome">
+
+            <RelativeLayout
+                android:id="@+id/containerTitleBodyHome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:background="@drawable/bg_button_shape_down"
+                android:backgroundTint="@color/iris_100"
+                android:paddingStart="20dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="20dp"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Доска объявлений"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:theme="@style/h2" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/containerMyStoryMaterialHome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/containerTitleBodyHome"
+                android:layout_marginBottom="3dp"
+                android:background="@color/iris_100"
+                android:paddingStart="20dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="20dp"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:id="@+id/tvTitleMyStoryMaterialHome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="Изученные материалы"
+                    android:theme="@style/h3_home" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_below="@+id/tvTitleMyStoryMaterialHome"
+                    tools:itemCount="5"
+                    tools:listitem="@layout/item_home_materials" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/containerCompletedTestNome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/containerMyStoryMaterialHome"
+                android:layout_marginBottom="3dp"
+                android:background="@color/iris_100"
+                android:paddingStart="20dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="20dp"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:id="@+id/tvTitleCompletedTestHome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="Пройденные тесты"
+                    android:theme="@style/h3_home" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_below="@+id/tvTitleCompletedTestHome"
+                    tools:itemCount="5"
+                    tools:listitem="@layout/item_home_materials" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/containerInfoHome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/containerCompletedTestNome"
+                android:background="@drawable/bg_button_shape_up"
+                android:paddingStart="20dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="20dp"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:id="@+id/tvTitleInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="Информация"
+                    android:theme="@style/h3_home" />
+
+                <TextView
+                    android:id="@+id/tvInfoBodyHome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvTitleInfo"
+                    android:layout_marginBottom="10dp"
+                    android:text="Приложение построено на базе онлайн сервиса SkillStroy."
+                    android:textColor="@color/white"
+
+
+                    />
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</androidx.core.widget.NestedScrollView>

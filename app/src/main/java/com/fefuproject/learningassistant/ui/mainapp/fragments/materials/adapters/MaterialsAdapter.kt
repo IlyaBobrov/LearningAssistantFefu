@@ -4,6 +4,7 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.fefuproject.learningassistant.R
@@ -41,17 +42,19 @@ class MaterialsAdapter(
     inner class itemViewHolder(itemView: View) :
         RecyclerView.ViewHolder(itemView), View.OnClickListener {
 
+        var title: TextView = itemView.findViewById(R.id.tvTitleItemMaterial)
+
         fun bindItemHolder(currentItem: MatetialModel) {
             itemView.setOnClickListener(this)
-
+            title.text = currentItem.heading
         }
 
         override fun onClick(v: View) {
-            /*materialOnItemClickListener.onItemClick(
+            materialOnItemClickListener.onItemClick(
                 v,
                 getItem(absoluteAdapterPosition),
                 absoluteAdapterPosition
-            )*/
+            )
         }
     }
 
