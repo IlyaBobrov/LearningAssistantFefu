@@ -25,17 +25,6 @@ class LoginFragment : Fragment() {
 
 
         val viewModel: LoginViewModel by viewModels()
-//    private lateinit var viewModel: LoginViewModel
-
-
-//    lateinit var observer: Observer<String>
-//    private var livedata = MyLiveData()
-
-/*
-    private val viewModel: LoginViewModel by navGraphViewModels(R.id.nested_graph) {
-        defaultViewModelProviderFactory
-    }
-*/
 
 
     var login: String = ""
@@ -65,14 +54,11 @@ class LoginFragment : Fragment() {
 
     private fun setupListeners() {
         binding.tvBtnAuthRegHere.setOnClickListener {
-//            findNavController().navigate(R.id.registrationFragment)
             findNavController().navigate(R.id.action_loginFragment_to_registrationFragment)
         }
-
         binding.tvBtnAuthForgetPassword.setOnClickListener {
             findNavController().navigate(R.id.action_loginFragment_to_rePasswordFragment)
         }
-
         binding.btnAuthEnter.setOnClickListener {
             checkFields()
             startMainActivity()
@@ -82,10 +68,6 @@ class LoginFragment : Fragment() {
     private fun checkFields() {
         login = binding.etLoginAuth.text.toString().trim()
         pas = binding.etPasswordAuth.text.toString()
-//        livedata.setLogin(login)
-
-//        viewModel.login = login
-//        viewModel.user.value
     }
 
     private fun startMainActivity() {

@@ -48,7 +48,7 @@ class SubjectsFragment : Fragment(), SubjectsAdapter.SubjectOnItemClickListener 
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
+        adapterSubjects.submitList(null)
         generateData()
         setupRecyclerview()
         sortAndSetData()
